@@ -38,7 +38,7 @@ $(function () {
         $.ajax({
             type: 'POST',
             data: data,
-            url: 'http://ajax.frontend.itheima.net/api/reguser',
+            url: '/api/reguser',
             success: function (res) {
                 if (res.status !== 0) {
                     return layer.msg('注册失败!' + res.message);
@@ -65,7 +65,7 @@ $(function () {
         $.ajax({
             type: 'POST',
             data: data,
-            url: 'http://ajax.frontend.itheima.net/api/login',
+            url: '/api/login',
             success: function (res) {
                 console.log(res);
                 if (res.status !== 0) {
