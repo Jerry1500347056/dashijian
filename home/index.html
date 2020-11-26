@@ -49,15 +49,15 @@
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <div class="userinfo">
                     <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
-                    <span class="text-avatar">A</span>
-                    <span class="welcome">欢迎XXX</span>
+                    <span class="text-avatar"></span>
+                    <span class="welcome">欢迎</span>
                 </div>
 
 
 
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all" lay-filter="test">
                     <li class="layui-nav-item layui-nav-itemed layui-this">
-                        <a href="">
+                        <a href="/home/dashboard.html" target="haha">
                             <span class="iconfont icon-home"></span>
                             首页</a></li>
                     <li class="layui-nav-item ">
@@ -77,11 +77,11 @@
                         <a href="javascript:;">
                             <span class="iconfont icon-user"></span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;">
+                            <dd><a href="/home/user.html" target="haha">
                                     <i class="layui-icon layui-icon-app"></i> 基本资料</a></dd>
-                            <dd><a href="javascript:;">
+                            <dd><a href="user_avatar.html" target="haha">
                                     <i class="layui-icon layui-icon-app"></i> 更换头像</a></dd>
-                            <dd><a href="">
+                            <dd><a href="user_pwd.html" target="haha">
                                     <i class="layui-icon layui-icon-app"></i> 重置密码</a></dd>
                         </dl>
                     </li>
@@ -92,7 +92,7 @@
 
         <div class="layui-body">
             <!-- 内容主体区域 -->
-            <iframe src="/home/dashboard.html" frameborder="0"></iframe>
+            <iframe src="./dashboard.html" frameborder="0" name="haha"></iframe>
         </div>
 
         <div class="layui-footer">

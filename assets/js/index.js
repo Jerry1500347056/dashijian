@@ -13,7 +13,11 @@ $(function () {
         });
     })
 
+    getinfo();
 
+})
+
+function getinfo() {
     // 发送ajax请求获取到用户信息  渲染到页面中
     $.ajax({
         url: '/my/userinfo',
@@ -61,4 +65,5 @@ $(function () {
 
 
     })
-})
+
+}

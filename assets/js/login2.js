@@ -21,7 +21,7 @@ $.ajaxPrefilter(function (options) {
         // 形参可以获取到xhr对象
         //   console.log(xhr);
         if (
-            xhr.responseJSON.status === 1 &&
+            xhr.responseJSON.status !== 0 &&
             xhr.responseJSON.message === "身份认证失败！"
         ) {
             // 回到登录页面重新登录
